@@ -148,7 +148,7 @@ $(function(){
 //加载菜单==
 function loadMenu(){
    $.ajax({
-      type:'POST',
+      type:'get',
 	   url:'common/data/menu.json', //实际应用上是调用方法返回数据
 	   dataType:'json',
 	   success: function(menu){ 
