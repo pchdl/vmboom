@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="common/css/config.css">
+</head>
+<body>
+<div class="page">
+<h2>滚动条插件</h2>
+<pre>需要在 jquery.js 后引入 common/js/divscroll.js 文件
+然后给需要滚动条的div设置 class 或 id ，且div固定高度并设置 overflow:hidden
+最后使用以下代码调用：
+
+<code>$('#scroller').perfectScrollbar();</code>
+
+</pre>
+<div id="scroller" style="width: 500px;height: 200px;overflow: hidden; border: solid 1px #777;">
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+	<p>1</p>
+</div>
+
+
+
+</div>
+<script type="text/javascript" src="common/js/jquery.min.js"></script>
+<script type="text/javascript" src="common/js/divscroll.js"></script>
+<script type="text/javascript" src="common/js/config.js"></script>
+<script type="text/javascript">
+	$('#scroller').perfectScrollbar();
+</script>
+</body>
+</html>

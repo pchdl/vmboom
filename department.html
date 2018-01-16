@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>消息弹窗</title>
+	<link rel="stylesheet" type="text/css" href="common/css/config.css">
+</head>
+<body>
+<div class="page">	
+<h2>消息弹窗插件</h2>
+<button id="showmessage" class="btn btn-primary">消息弹窗</button>
+<button id="showmessage1" class="btn btn-success">消息弹窗</button>
+<button id="showmessage2" class="btn btn-warning">消息弹窗</button>
+<button id="showmessage3" class="btn btn-danger">消息弹窗</button>
+<pre>
+<code style="display: block;line-height: 18px; width:600px;padding: 15px">$.message({
+    title: '信息提示',     <span style="color: #999">//弹窗标题(默认)</span>
+    text: '用户密码错误',   <span style="color: #999">//提示信息内容</span>
+    status:'success',    <span style="color: #999">//状态分为：success（默认）/warning/danger 3种  </span>
+    btntext:'确定',       <span style="color: #999">//按钮文字，默认为确定</span>
+    href:''              <span style="color: #999">//点击确定按钮链接(网址或调用的方法)</span>
+});
+
+注意：在具体场景应用中调用方法时,其中 text 必填。如果href有值，点击确定按钮才跳转页
+面，点击右上角的关闭只关掉弹窗。
+</code>
+
+
+
+</pre>
+
+
+</div>
+<script type="text/javascript" src="common/js/jquery.min.js"></script>
+<script type="text/javascript" src="common/js/config.js"></script>
+<script tyle="text/javascript">
+$(function(){
+	$('#showmessage').on('click',function(){
+		$.message({
+			title: '信息提示', //弹窗标题
+            text: '请查看弹窗文档',//提示信息内容
+            status:'primary',  //状态分为：primary/success/warning/danger 4种  
+            //btntext:'确定', //按钮文字
+            href:'' //点击按钮链接(网址或调用的方法)
+		});
+	});
+	$('#showmessage1').on('click',function(){
+		$.message({
+			title: '信息提示', //弹窗标题
+            text: '保存成功',//提示信息内容
+            status:'success',  //状态分为：primary/success/warning/danger 4种  
+            //btntext:'确定', //按钮文字
+            href:'' //点击按钮链接(网址或调用的方法)
+		});
+	});
+	$('#showmessage2').on('click',function(){
+		$.message({
+			title: '信息提示', //弹窗标题
+            text: '您输入的字符不合法！',//提示信息内容
+            status:'warning',  //状态分为：primary/success/warning/danger 4种  
+            //btntext:'确定', //按钮文字
+            href:'' //点击按钮链接(网址或调用的方法)
+		});
+	});
+	$('#showmessage3').on('click',function(){
+		$.message({
+			title: '信息提示', //弹窗标题
+            text: '发生意外!',//提示信息内容
+            status:'danger',  //状态分为：primary/success/warning/danger 4种  
+            //btntext:'确定', //按钮文字
+            href:'stock.html' //点击按钮链接(网址或调用的方法)
+		});
+	});
+})
+	
+
+
+</script>
+</body>
+</html>

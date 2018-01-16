@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="common/css/config.css">
+	<link rel="stylesheet" type="text/css" href="common/jedate/skin/jedate.css">
+</head>
+<body>
+<div class="page">
+<h2>日期插件</h2>	
+
+<pre>
+需要引入样式文件 common/jedate/skin/jedate.css
+需要在 jquery.js 后引入文件 common/jedate/jedate.js
+
+一般在文本框中选择日期，首先给文本框加入 class="input-date" 来标识是日期文本框；
+日期分几种形式：也是通过样式来控制
+.fulldatetime     YYYY-MM-DD hh:mm:ss
+.datehhmm         YYYY-MM-DD hh:mm
+.onlydate         YYYY-MM-DD
+.yearandmonth     YYYY-MM
+.onlytime         hh:mm:ss
+.hourandminute    hh:mm
+
+<code style="display: block;"><text><</text>input type="text" class="default-control input-date fulldatetime" placeholder="年月日时分秒">
+<text><</text>input type="text" class="default-control input-date datehhmm" placeholder="年月日时分">
+<text><</text>input type="text" class="default-control input-date onlydate" placeholder="年月日">
+<text><</text>input type="text" class="default-control input-date yearandmonth" placeholder="年月">
+<text><</text>input type="text" class="default-control input-date onlytime" placeholder="时分秒">
+<text><</text>input type="text" class="default-control input-date hourandminute" placeholder="时分"></code>
+</pre>	
+
+<input type="text" class="default-control input-date fulldatetime" placeholder="年月日时分秒">
+<input type="text" class="default-control input-date datehhmm" placeholder="年月日时分">
+<input type="text" class="default-control input-date onlydate" placeholder="年月日">
+<input type="text" class="default-control input-date yearandmonth" placeholder="年月">
+<input type="text" class="default-control input-date onlytime" placeholder="时分秒">
+<input type="text" class="default-control input-date hourandminute" placeholder="时分">
+
+</div>
+<script type="text/javascript" src="common/js/jquery.min.js"></script>
+<script type="text/javascript" src="common/jedate/jedate.js"></script>
+<script type="text/javascript" src="common/js/config.js"></script>
+
+
+</body>
+</html>

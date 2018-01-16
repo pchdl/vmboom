@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit"> 
+	<title>表单样式</title>
+	<link rel="stylesheet" type="text/css" href="common/css/config.css">
+</head>
+<body>
+<div class="page">
+<div style="position: fixed;width: 100%;padding:10px;left:0;top: 0; background-color: #FFF;border-bottom: solid 1px #eee;">
+	<h2>表单样式</h2>
+	<a href="#link1" class="btn btn-default btn-sm">文本框</a>
+	<a href="#link2" class="btn btn-default btn-sm">下拉选框</a>
+	<a href="#link3" class="btn btn-default btn-sm">复选框</a>
+	<a href="#link4" class="btn btn-default btn-sm">单选框</a>
+</div>
+
+<div style="padding-top: 95px;" id="link1">
+	<title >1.文本框</title>
+	<pre>.default-control:默认文本框当获得焦点时的样式控制</pre>
+	<pre>.warning-control:警告文本框当获得焦点时的样式控制</pre>
+	<pre>.danger-control:危险文本框当获得焦点时的样式控制</pre>
+	<pre>.form-md:中等</pre>
+	<pre>.form-lg:大型</pre>
+
+	<input type="text" class="default-control" placeholder="小文本框">
+	<code><text><</text>input class="default-control"<text>></text></code><br><br>
+	<input type="text" class="default-control form-md" placeholder="中等文本框">
+	<code><text><</text>input class="default-control form-md"<text>></text></code><br><br>
+	<input type="text" class="default-control form-lg" placeholder="大型文本框">
+	<code><text><</text>input class="default-control form-lg"<text>></text></code><br><br>
+
+
+	<input type="text" class="warning-control" placeholder="小文本框">
+	<code><text><</text>input class="warning-control"<text>></text></code><br><br>
+	<input type="text" class="warning-control form-md" placeholder="中等文本框">
+	<code><text><</text>input class="warning-control form-md"<text>></text></code><br><br>
+	<input type="text" class="warning-control form-lg" placeholder="大型文本框">
+	<code><text><</text>input class="warning-control form-lg"<text>></text></code><br><br>
+
+	<input type="text" class="danger-control" placeholder="小文本框"><br><br>
+	<input type="text" class="danger-control form-md" placeholder="中等文本框"><br><br>
+	<input type="text" class="danger-control form-lg" placeholder="大型文本框"><br><br>
+</div>
+<div style="padding-top: 95px;" id="link2">
+	<title>2.下拉选框</title>
+	<pre>.default-control:在这里一样适用</pre>
+	<pre>.select:改变下拉框中右侧的方块，用新的样式代替</pre>
+	<pre><code style="display: block;"><text><</text>div class="selectbox select-inline">  <span style="color:#999">//外层容器,select-inline实现内联</span>
+    <text><</text>select class="default-control select">
+	<text><</text>option value="1">中国银行<text><</text>/option>
+	<text><</text>option value="2">中国建设银行<text><</text>/option>
+	<text><</text>option value="3">中国工商银行<text><</text>/option>
+	<text><</text>option value="4">交通银行<text><</text>/option>
+	<text><</text>option value="5">农业银行<text><</text>/option>
+    <text><</text>/select>
+<text><</text>/div></code></pre>
+	<div class="selectbox select-inline">
+		<select class="default-control select">
+			<option value="1">中国银行</option>
+			<option value="2">中国建设银行</option>
+			<option value="3">中国工商银行</option>
+			<option value="4">交通银行</option>
+			<option value="5">农业银行</option>
+		</select>
+	</div>
+	
+	<div class="selectbox select-inline">
+		<select class="default-control select">
+			<option value="1">账号：张晓东 4409238547824245256234523</option>
+			<option value="2">账号：李娜 88480411269432122434</option>
+			<option value="3">账号：马明宇 88489627886250574322</option>
+			<option value="4">账号：蔡晓明 663412855642467833450</option>
+			<option value="5">账号：窦非 57897893456122534787684</option>
+		</select>
+	</div>
+
+	<br>
+	<pre>对比一下系统默认的样式：</pre>
+	<select class="default-control">
+		<option value="1">中国银行</option> 
+		<option value="2">中国建设银行</option>
+		<option value="3">中国工商银行</option>
+		<option value="4">交通银行</option>
+		<option value="5">农业银行</option>
+	</select>
+
+</div>
+<div style="padding-top: 95px;" id="link3">
+<form  id="myform" method="post" action="">
+	<title >3.复选框</title>
+	<div style="line-height: 30px;">爱好：</div>
+    <label class="label-checkbox"><input type="checkbox" name="aihao" value="1">音乐</label>	
+    <label class="label-checkbox"><input type="checkbox" name="aihao" value="2">美术</label>	
+    <label class="label-checkbox"><input type="checkbox" name="aihao" value="3">足球</label>	
+    <label class="label-checkbox"><input type="checkbox" name="aihao" value="4">美食</label>
+    <br>
+    <div style="padding-top: 10px"><button type="button" id="sendform" class="btn btn-primary">提交</button></div>
+</form>	
+
+</div>
+
+<div style="padding-top: 95px;" id="link4">
+<form  id="myform1" method="post" action="">
+	<title >3.单选框</title>
+	<div style="line-height: 30px;">选课：</div>
+    <label class="label-radio selected"><input type="radio" name="kecheng" value="1">语文</label>	
+    <label class="label-radio"><input type="radio" name="kecheng" value="2">数学</label>	
+    <label class="label-radio"><input type="radio" name="kecheng" value="3">英语</label>	
+    <label class="label-radio"><input type="radio" name="kecheng" value="4">化学</label>
+    <br>
+    
+    <div style="padding-top: 10px"><button type="button" id="sendform1" class="btn btn-primary">提交</button></div>
+</form>	
+
+</div>
+
+
+</div>
+<div style="height: 800px;"></div>
+<script type="text/javascript" src="common/js/jquery.min.js"></script>
+<script type="text/javascript" src="common/js/config.js"></script>
+<script tyle="text/javascript">
+$(function(){
+	$('#sendform').on('click',function(){
+		$.message({
+			title: '信息提示', //弹窗标题
+            text: $('#myform').serialize(),//提示信息内容
+            status:'success',  //状态分为：success/warning/danger 3种  
+            btntext:'确定', //按钮文字
+            href:'' //点击按钮链接(网址或调用的方法)
+		});
+	});
+	$('#sendform1').on('click',function(){
+		$.message({
+			title: '信息提示', //弹窗标题
+            text: $('#myform1').serialize(),//提示信息内容
+            status:'success',  //状态分为：success/warning/danger 3种  
+            btntext:'确定', //按钮文字
+            href:'' //点击按钮链接(网址或调用的方法)
+		});
+	});
+});
+</script>
+</body>
+</html>

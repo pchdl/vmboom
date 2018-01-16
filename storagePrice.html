@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="common/css/config.css">
+</head>
+<body>
+<div class="page">
+<h2>下拉菜单</h2>
+<pre>1.div
+<code style="margin-top: 8px;display: block;"><text><</text>div class="dropdown">关于我们<text><</text>i class="caret"><text><</text>/i><text><</text>/div></code></pre>
+<div class="dropdown">
+	<span style="font-size: 14px;">关于我们</span>
+	<i class="caret"></i>
+	<ul class="dropdown-item">
+	  <li><a href="#">公司简介</a></li>
+	  <li><a href="#">活动剪影</a></li>
+	  <li><a href="#">资质认证</a></li>
+	</ul>
+</div>
+
+<br><br>
+
+<pre>2.按钮</pre>
+<button type="button" class="btn btn-default dropdown">
+	关于我们
+	<i class="caret"></i>
+	<ul class="dropdown-item">
+	  <li><a href="#">公司简介</a></li>
+	  <li><a href="#">活动剪影</a></li>
+	  <li><a href="#">资质认证资质认证</a></li>
+	</ul></button>
+<br><br>
+<pre>3.按钮分裂式</pre>
+<div class="btn-group dropdown">
+    <button type="button" class="btn btn-default">关于我们</button><button type="button" class="btn btn-default"><i class="caret"></i></button>
+    <ul class="dropdown-item">
+	  <li><a href="#">公司简介</a></li>
+	  <li><a href="#">活动剪影</a></li>
+	  <li><a href="#">资质认证资质认证</a></li>
+	</ul>
+</div>
+<br><br>
+
+<pre>4.tab</pre>
+
+
+<div class="tabsign tabborder">
+	<ul class="tab-listbox">
+		<li class="tab-list focus-list">娱乐</li>
+		<li class="tab-list">军事</li>
+		<li class="tab-list">
+			<div class="dropdown">体育
+			    <i class="caret"></i>
+			    <ul class="dropdown-item">
+				  <li><a href="#">英超</a></li>
+				  <li><a href="#">欧冠</a></li>
+				  <li><a href="#">德甲</a></li>
+				</ul>
+	        </div>
+	    </li>
+		<li class="tab-list">社会</li>
+	</ul>
+	<ul class="tab-con">
+		<li class="con-list focus-con">娱乐新闻内容列表</li>
+		<li class="con-list">军事新闻内容列表</li>
+		<li class="con-list">最新体育新闻</li>
+		<li class="con-list">社会新闻</li>
+	</ul>
+</div>
+
+
+
+
+<br><br>
+
+
+
+
+
+
+<script type="text/javascript" src="common/js/jquery.min.js"></script>
+<script type="text/javascript" src="common/js/config.js"></script>
+</body>
+</html>

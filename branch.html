@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="common/css/config.css">
+</head>
+<body>
+<div class="page">
+<h2>文件结构</h2>
+<pre>
+HDL系统框架是以jQuery为基础的。所以页面必须引入jquery.js文件，1.8以上版本。
+新建的页面放在根目录下，或在根目录下新建文件夹存放。使用时注意路径。
+根目录下的common文件夹存放系统通用文件，不要改变路径和文件夹名称，包括里面的文件，否则使用时您要做相应的路径改动。
+以下是common文件结构：
+
+common
+  |- css               <span style="color:#999">//存放所有样式文件</span>
+      |- config.css    <span style="color:#999">//系统样式（必须）</span>
+  |- data              <span style="color:#999">//存放固定数据的文件，这里一般放 json 文件，通过ajax调用</span>
+  |- images            <span style="color:#999">//图片文件夹</span>
+  |- jedata            <span style="color:#999">//日期插件文件夹</span>
+  |- js                <span style="color:#999">//存放js文件</span>
+      |- config.js     <span style="color:#999">//系统js（必须）</span>
+      |- divscroll.js  <span style="color:#999">//左侧菜单纵向滚动条样式控制js</span>
+      |- jquery.jqprint-0.3.js  <span style="color:#999">//jqprint打印插件</span>
+      |- jquery.min.js  <span style="color:#999">//jquery库文件（必须）</span>
+      |- jquery-form.js <span style="color:#999">//jquery表单js，特别当表单提交包含文件上传时用到。</span>
+      |- jquery-migrate-1.1.0.js  <span style="color:#999">//jqprint打印的IE兼容文件,与jqprint.js一起使用。</span>
+      |- store.js      <span style="color:#999">//本地存储插件</span>
+      |- 自定义自己的js文件
+
+</pre>
+
+
+</div>
+
+<script type="text/javascript" src="common/js/jquery.min.js"></script>
+<script type="text/javascript" src="common/js/config.js"></script>
+</body>
+</html>

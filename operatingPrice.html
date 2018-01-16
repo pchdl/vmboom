@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="common/css/config.css">
+</head>
+<body>
+<div class="page">
+	<h2>Tab标签</h2>
+
+
+		
+	
+<div class="tabsign tabborder">
+	<ul class="tab-listbox">
+		<li class="tab-list focus-list">娱乐</li>
+		<li class="tab-list">军事</li>
+		<li class="tab-list">体育</li>
+		<li class="tab-list">社会</li>
+	</ul>
+	<ul class="tab-con">
+		<li class="con-list focus-con">娱乐新闻内容列表</li>
+		<li class="con-list">军事新闻内容列表</li>
+		<li class="con-list">最新体育新闻</li>
+		<li class="con-list">社会新闻</li>
+	</ul>
+</div>
+<pre>
+同一个页面可以有多个tab标签，相互不会影响
+<code style="display: block;"><text><</text>div class="tabsign tabborder"> <span style="color:#999">//tab使用tabsign容器,tabborder内容栏边框</span>
+    <text><</text>ul class="tab-listbox "> <span style="color:#999">//tab-listbox标题栏</span>
+        <text><</text>li class="tab-list focus-list">娱乐<text><</text>/li> <span style="color:#999">//tab标签, focus-list是当前激活的样式</span>
+        <text><</text>li class="tab-list">军事<text><</text>/li>
+        <text><</text>li class="tab-list">体育<text><</text>/li>
+        <text><</text>li class="tab-list">社会<text><</text>/li>
+    <text><</text>/ul>
+    <text><</text>ul class="tab-con"> <span style="color:#999">//tab-con内容栏</span>
+        <text><</text>li class="con-list focus-con">娱乐新闻内容列表<text><</text>/li> <span style="color:#999">//内容列表，focus-con是当前激活内容</span>
+        <text><</text>li class="con-list">军事新闻内容列表<text><</text>/li>
+        <text><</text>li class="con-list">最新体育新闻<text><</text>/li>
+        <text><</text>li class="con-list">社会新闻<text><</text>/li>
+    <text><</text>/ul>
+<text><</text>/div></code></pre>
+
+
+
+</div>
+<script type="text/javascript" src="common/js/jquery.min.js"></script>
+<script type="text/javascript" src="common/js/config.js"></script>
+</body>
+</html>

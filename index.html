@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HDL系统框架</title>
+	<link rel="stylesheet" type="text/css" href="common/css/config.css">
+	<script type="text/javascript">
+        
+	</script>
+</head>
+<body>
+<div class="frametop">
+    <div class="logo"><img src="common/images/logo.png" style="height: 80%;"></div>
+	<div class="sysinfo">admin<br>欢迎登录系统。<a href="" class="frame-a">安全退出</a></div>
+	<div class="mainmenu"></div>
+</div>	
+<div class="framebot clearfix">
+	<div class="frameleft"><!-- 左侧菜单 --></div>
+	<div class="framebody">
+		<div class="tab clearfix">
+			<div class="prev"></div>
+			<div class="next"></div>
+            <div class="tabbox"><!-- 标签 --></div>			
+		</div>
+		<div class="loadPage"><!-- 页面 --></div>
+	</div>
+</div>
+<script type="text/javascript" src="common/js/jquery.min.js"></script>	
+<script type="text/javascript" src="common/js/divscroll.js"></script>
+<script type="text/javascript" src="common/js/config.js"></script>
+<script type="text/javascript">
+    // 点击浏览器标签自动刷新页面
+	// var hiddenProperty = 'hidden' in document ? 'hidden' :    
+	//     'webkitHidden' in document ? 'webkitHidden' :    
+	//     'mozHidden' in document ? 'mozHidden' :    
+	//     null;
+	// var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+	// var onVisibilityChange = function(){
+	// 	location.reload();
+	// }
+	// document.addEventListener(visibilityChangeEvent, onVisibilityChange);
+	loadMenu();//加载菜单
+</script>
+</body>
+</html>

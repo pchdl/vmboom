@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<meta name="renderer" content="webkit"> 
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="common/css/config.css">
+</head>
+<body>
+<div class="page">
+	<h2>框架兼容性问题解决</h2>
+
+	<title>下拉选框</title>
+	<pre>.default-control:在这里一样适用</pre>
+	<pre>.select:改变下拉框中右侧的方块，用新的样式代替</pre>
+	<pre><code><text><</text>div class="selectbox">
+		<text><</text>select class="default-control select">
+			<text><</text>option value="1">中国银行</option>
+			<text><</text>option value="2">中国建设银行</option>
+			<text><</text>option value="3">中国工商银行</option>
+			<text><</text>option value="4">交通银行</option>
+			<text><</text>option value="5">农业银行</option>
+		<text><</text>/select>
+	<text><</text>/div></code></pre>
+
+	<div class="selectbox">
+		<select class="default-control select">
+			<option value="1">中国银行</option>
+			<option value="2">中国建设银行</option>
+			<option value="3">中国工商银行</option>
+			<option value="4">交通银行</option>
+			<option value="5">农业银行</option>
+		</select>
+	</div>
+    <br>
+
+	<div class="selectbox">
+		<select class="default-control select">
+			<option value="1">账号：张晓东 4409238547824245256234523</option>
+			<option value="2">账号：李娜 88480411269432122434</option>
+			<option value="3">账号：马明宇 88489627886250574322</option>
+			<option value="4">账号：蔡晓明 663412855642467833450</option>
+			<option value="5">账号：窦非 57897893456122534787684</option>
+		</select>
+	</div>
+    
+
+	<br>
+	<pre>对比一下系统默认的样式：</pre>
+	<select class="default-control">
+		<option value="1">账号：张晓东 4409238547824245256234523</option>
+		<option value="2">账号：李娜 88480411269432122434</option>
+		<option value="3">账号：马明宇 88489627886250574322</option>
+		<option value="4">账号：蔡晓明 663412855642467833450</option>
+		<option value="5">账号：窦非 57897893456122534787684</option>
+	</select>
+	
+
+</div>
+<script type="text/javascript" src="common/js/jquery.min.js"></script>
+<script type="text/javascript" src="common/js/config.js"></script>
+</body>
+</html>

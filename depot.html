@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="common/css/config.css">
+</head>
+<body>
+<div class="page">
+<h2>打开页面</h2>
+<pre>这里是内页打开页面，自动跳转并激活对应的菜单。
+与三级菜单打开页面一样调用相同的函数openPage(url)
+
+<code style="display: block;">$('#openpage').on('click',function(){
+    openPage('stocking.html'); <span style="color: #999">//网址或方法</span>
+})
+</code>
+</pre>
+<button type="button" id="openpage" class="btn btn-default">打开页面</button>
+
+
+
+
+</div>
+<script type="text/javascript" src="common/js/jquery.min.js"></script>
+<script type="text/javascript" src="common/js/config.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#openpage').on('click',function(){
+		openPage('stocking.html');
+	})
+
+})
+</script>
+</body>
+</html>
